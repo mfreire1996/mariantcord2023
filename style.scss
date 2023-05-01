@@ -1,0 +1,455 @@
+$primaryColor: hsl(240, 60%, 42%);
+$secondaryColor: hsl(60, 60%, 42%);
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+$bg: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg";
+$form-bg: #f8f4e5;
+$form-shadow: #ffa580;
+$form-primary-highlight: #95a4ff;
+$form-secondary-highlight: #ffc8ff;
+$font-size: 14pt;
+$font-face: 'Fjalla One';
+$font-color: #2A293E;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
+    color: $secondaryColor;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 60%;
+    display: flex;
+
+    img {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-img {
+        width: 50rem;
+        margin-right: 10rem;
+    } 
+}
+
+@media screen and (max-width: 1000px) {
+    .main-img {
+        width: 50rem;
+        margin-right: 10rem;
+    } 
+}
+
+.title {
+    position: relative;
+    margin-left: 40.5%;
+    margin-top: -17.5%;
+    margin-bottom: 20%;
+
+    img {
+        width: 35%;
+    }
+
+    figcaption {
+        font-size: 32px;
+        font-weight: 800;
+        margin-left: 2%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .title {
+        img {
+            width: 57.5%;
+            margin-top: -5.5rem;
+        }
+
+        figcaption {
+            font-weight: 100;
+        }
+    } 
+}
+
+
+.title-box {
+    background-color: $primaryColor;
+    width: 27.5%;
+    padding: 5rem 2.5rem;
+    position: relative;
+    margin-left: 40%;
+    margin-top: -15%;
+}
+
+.info {
+    position: relative;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    max-width: 40%;
+
+    h1 {
+        font-weight: 800;
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .info {
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        margin-left: 10%;
+        max-width: 90%;
+    }
+    
+}
+
+.real-estate {
+    position: relative;
+    margin-left: 50%;
+    line-height: 1.6;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 30rem;
+        position: relative;
+        margin-top: -35rem;
+        margin-left: -35rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    p {
+        max-width: 25rem
+    }
+
+    h1 {
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .real-estate {
+
+        h1, p {
+            margin-left: -10rem;
+            position: relative;
+            max-width: 100%;
+        }
+
+        img {
+            margin-top: 5rem;
+            width: 25rem;
+            margin-left: -10rem;
+        }
+    }
+    
+}
+
+.helping {
+    position: relative;
+
+    margin-top: 15%;
+    margin-left: 25%;
+    max-width: 40%;
+
+    img {
+        position: relative;
+        margin-left: 110%;
+        margin-top: -52rem;
+        margin-bottom: 2rem;
+        width: 20rem;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .helping {
+        max-width: 100%;
+        margin-left: 5rem;
+
+        img {
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+        }
+    }
+}
+
+.icons-section {
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+
+
+    .icons {
+        color: $secondaryColor;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+        max-width: 10%;
+        text-align: center;
+
+        hr {
+            border: none;
+            height: 0.25rem;
+            width: 5rem;
+            background-color: #fff;
+            margin-top: 1rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        i {
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .icons-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icons {
+        max-width: 100% !important;
+        margin-bottom: 5rem;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    display: -ms-flexbox;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        grid-template-columns: 1fr 1fr 1fr;
+        -ms-flex: 25%;
+
+        img {
+            margin-top: 8px;
+            vertical-align: middle;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 100%;
+            height: 50%;
+        }
+
+        #study {
+            img {
+                height: 15.2rem;
+
+            }
+        }
+
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+}
+
+.form {
+    background-color: (240, 3%, 94%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    max-width: 30%;
+    padding: 0 0 0 15rem;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    .form-section {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5rem 0;
+    }
+
+    input {
+        outline: 0;
+        border-width: 0 0 2.5px;
+        border-color: solid 20px #000;
+        line-height: 1.6;
+        font-size: 16px;
+        width: 48%;
+        margin: 1.5rem 0;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 1rem 0;
+        text-align: center;
+        width: 48%;
+        color: white;
+        border: none;
+        cursor: pointer;
+        background: red; /* default color */
+    
+        /* "to left" / "to right" - affects initial color */
+        background: linear-gradient(to left, $secondaryColor 50%, hsl(60, 60%, 32%) 50%) right;
+        background-size: 200%;
+        transition: .5s ease-out;
+    }
+
+    .button:hover {
+        background-position: left;
+    }
+}
+
+@media screen and (max-width:1900px) {
+    .form {
+        max-width: 40%;
+    } 
+
+    .form-section {
+        input, button, h3 {
+            margin-left: -5rem;
+        }
+    }
+}
+
+@media screen and (max-width:1700px) {
+    .form {
+        max-width: 50%;
+    }
+
+    .form-section {
+        input, button, h3 {
+            margin-left: 0rem;
+        }
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .form {
+        max-width: 60%;
+    }
+}
+ 
+@media screen and (max-width:1200px) {
+    .form {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .form {
+        max-width: 80%;
+    }
+
+    .form-section {
+        input, button, h3 {
+            margin-left: 0rem;
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .form {
+        max-width: 90%;
+    }
+
+    .form-section {
+        input, button, h3 {
+            margin-left: -5rem;
+        }
+    }
+}
+ 
+.footer {
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    i {
+        color: $secondaryColor;
+        display: inline-block;
+        border-radius: 50px;
+        box-shadow: 0 0 3px $secondaryColor;
+        padding: 0.5em 0.6em;
+        transition: ease-in-out .3s;
+    }
+
+    i:hover {
+        background-color: $secondaryColor;
+        box-shadow: 0 0 2px $secondaryColor;
+        color: white;
+    }
+
+    h4 {
+        margin-left: -3rem;
+    }
+
+    .social-media {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        }  
+    }
+
